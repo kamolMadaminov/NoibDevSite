@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Noib.dev – Portfolio and app showcase by Kamol Madaminov" />
-  <title>Noib.dev – Coming Soon</title>
+  <title>Noib.dev – Kamol Madaminov</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
@@ -24,6 +24,7 @@
       justify-content: center;
       text-align: center;
       padding: 2rem;
+      position: relative;
     }
     h1 {
       font-size: 2.5rem;
@@ -33,6 +34,27 @@
     p {
       font-size: 1.1rem;
       color: #444;
+      margin-bottom: 2rem;
+    }
+    .links a {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 0.6rem 1.2rem;
+      font-weight: 600;
+      color: white;
+      background-color: #1E2A47;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    .links a:hover {
+      background-color: #30D0A0;
+    }
+    .badges {
+      margin-top: 1.5rem;
+    }
+    .badges img {
+      height: 40px;
     }
     footer {
       position: absolute;
@@ -47,8 +69,20 @@
 <body>
   <div>
     <h1>Noib.dev</h1>
-    <p>Coming soon. This site will host apps, projects, and more.</p>
+    <p>Welcome to the personal space of Kamol Madaminov – iOS apps, ideas, reflections & more.</p>
+
+    <div class="links">
+      <a href="https://t.me/noibkh" target="_blank">Feedback on Telegram</a>
+      <a href="https://github.com/kamolMadaminov" target="_blank">GitHub</a>
+    </div>
+
+    <div class="badges">
+      <a href="https://apps.apple.com/app/protocol-daily-ops/id0000000000" target="_blank">
+        <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&release=true" alt="Download on the App Store">
+      </a>
+    </div>
   </div>
+
   <footer>
     &copy; 2025 Kamol Madaminov
   </footer>
