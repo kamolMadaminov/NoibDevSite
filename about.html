@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About">
+    <title>About</title>
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <style>
+        /* Basic Smooth Scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Example: Style for active nav link (adjust colors) */
+        .nav-active {
+            font-weight: bold;
+            /* Add other styling like underline or color */
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans antialiased">
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold text-indigo-600 hover:text-indigo-800">Noib</a>
+            <ul class="flex space-x-4 md:space-x-6">
+                <li><a href="index.html" class="text-gray-600 hover:text-indigo-600 nav-active">Home</a></li>
+                <li><a href="about.html" class="text-gray-600 hover:text-indigo-600">About</a></li>
+                <li><a href="projects.html" class="text-gray-600 hover:text-indigo-600">Projects</a></li>
+                <li><a href="support.html" class="text-gray-600 hover:text-indigo-600">Support</a></li>
+                <li><a href="contact.html" class="text-gray-600 hover:text-indigo-600">Contact</a></li>
+            </ul>
+            </nav>
+        </header>
+
+        <main class="container mx-auto px-6 py-12">
+          <section class="bg-white p-8 rounded-lg shadow-md max-w-3xl mx-auto">
+            <h1 class="text-3xl font-bold mb-6 text-center">About Me</h1>
+          
+            <h2 class="text-2xl font-semibold mb-3">My Journey into iOS Development</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">
+              Born in Uzbekistan, raised with purpose. I wasn’t chasing code — I was chasing clarity. After years of questioning systems, and walking the path, I found something in iOS development that felt right. Swift and SwiftUI weren’t just tools — they were frameworks to build real, lasting things with speed, elegance, and control.
+            </p>
+            <p class="text-gray-700 leading-relaxed mb-6">
+              I taught myself, launched my first app <strong>Protocol</strong>, and put everything into learning with depth. I value clean architecture, deep focus, and purposeful design. I don’t chase titles or trends — I chase the craft. Every line of code I write respects the user and the future I’m building toward.
+            </p>
+          
+            <hr class="my-8 border-gray-300">
+          
+            <section id="gratitude">
+              <h2 class="text-2xl font-semibold mb-3">Gratitude</h2>
+              <p class="text-gray-700 leading-relaxed mb-4">
+                I stand on the shoulders of people who believed in me before the world did. Some invested their time. Some invested their money. Some invested their faith.
+              </p>
+              <blockquote class="border-l-4 border-indigo-500 pl-4 italic text-gray-600 my-4">
+                But one of them did all three.<br><br>
+                In 2022, I was a teenager with fire but no structure — vision but no direction.<br>
+                He saw something in me that even I hadn’t fully seen yet.<br>
+                He sponsored my path to becoming an iOS developer. He gave me belief — and accountability.<br><br>
+                His name is not here yet. Because I want to earn the right to name him.<br>
+                But I carry his impact in every commit, every product, every user I serve.<br><br>
+                This site, these apps, this journey — all of it traces back to that seed.<br>
+                And this is just the beginning.
+              </blockquote>
+              <p class="text-gray-700 leading-relaxed">
+                His guidance wasn’t just technical. It was foundational. And I carry that with me, quietly but proudly.
+              </p>
+            </section>
+          </section>
+          
+      </main>
+
+      <footer class="bg-gray-800 text-gray-300 py-6 mt-12">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; <span id="current-year"></span> Noib. All rights reserved.</p>
+            <div class="mt-2">
+                <a href="https://linkedin.com/in/kamolMadaminov" target="_blank" rel="noopener noreferrer" class="hover:text-white mx-2">LinkedIn</a> |
+                <a href="https://github.com/kamolMadaminov" target="_blank" rel="noopener noreferrer" class="hover:text-white mx-2">GitHub</a> |
+                <a href="https://t.me/noibkh" target="_blank" rel="noopener noreferrer" class="hover:text-white mx-2">Telegram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Basic Active Nav Link Highlighting
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+            const navLinks = document.querySelectorAll('header nav ul li a');
+            navLinks.forEach(link => {
+                if (link.getAttribute('href') === currentPath) {
+                    link.classList.add('nav-active');
+                } else {
+                    link.classList.remove('nav-active'); // Ensure others are not active
+                }
+            });
+        });
+    </script>
+    </body>
+</html>

@@ -1,90 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Noib.dev – Portfolio and app showcase by Kamol Madaminov" />
-  <title>Noib.dev – Kamol Madaminov</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      font-family: 'Inter', sans-serif;
-      background-color: #ffffff;
-      color: #111;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 2rem;
-      position: relative;
-    }
-    h1 {
-      font-size: 2.5rem;
-      font-weight: 600;
-      margin-bottom: 1rem;
-    }
-    p {
-      font-size: 1.1rem;
-      color: #444;
-      margin-bottom: 2rem;
-    }
-    .links a {
-      display: inline-block;
-      margin: 0.5rem;
-      padding: 0.6rem 1.2rem;
-      font-weight: 600;
-      color: white;
-      background-color: #1E2A47;
-      border-radius: 8px;
-      text-decoration: none;
-      transition: background-color 0.3s ease;
-    }
-    .links a:hover {
-      background-color: #30D0A0;
-    }
-    .badges {
-      margin-top: 1.5rem;
-    }
-    .badges img {
-      height: 40px;
-    }
-    footer {
-      position: absolute;
-      bottom: 1rem;
-      width: 100%;
-      text-align: center;
-      font-size: 0.9rem;
-      color: #aaa;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kamol Madaminov - iOS Developer crafting high-quality Swift & SwiftUI applications. Explore my projects and get in touch.">
+    <title>Kamol Madaminov - iOS Developer</title>
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <style>
+        /* Basic Smooth Scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Example: Style for active nav link (adjust colors) */
+        .nav-active {
+            font-weight: bold;
+            /* Add other styling like underline or color */
+        }
+    </style>
 </head>
-<body>
-  <div>
-    <h1>Noib.dev</h1>
-    <p>Welcome to the personal space of Kamol Madaminov – iOS apps, ideas, reflections & more.</p>
+<body class="bg-gray-100 text-gray-800 font-sans antialiased">
 
-    <div class="links">
-      <a href="https://t.me/noibkh" target="_blank">Feedback on Telegram</a>
-      <a href="https://github.com/kamolMadaminov" target="_blank">GitHub</a>
-    </div>
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold text-indigo-600 hover:text-indigo-800">Noib</a>
+            <ul class="flex space-x-4 md:space-x-6">
+                <li><a href="index.html" class="text-gray-600 hover:text-indigo-600 nav-active">Home</a></li>
+                <li><a href="about.html" class="text-gray-600 hover:text-indigo-600">About</a></li>
+                <li><a href="projects.html" class="text-gray-600 hover:text-indigo-600">Projects</a></li>
+                <li><a href="support.html" class="text-gray-600 hover:text-indigo-600">Support</a></li>
+                <li><a href="contact.html" class="text-gray-600 hover:text-indigo-600">Contact</a></li>
+            </ul>
+            </nav>
+        </header>
 
-    <div class="badges">
-      <a href="https://apps.apple.com/app/protocol-daily-ops/id6744578703" target="_blank">
-        <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&release=true" alt="Download on the App Store">
-      </a>
-    </div>
-  </div>
+    <main class="container mx-auto px-6 py-12">
 
-  <footer>
-    &copy; 2025 Kamol Madaminov
+        <section class="text-center py-16">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Crafting Intuitive iOS Experiences with Swift & SwiftUI</h1>
+            <p class="text-lg text-gray-600 mb-8">iOS developer building purposeful SwiftUI apps. Sharing the drive through #100DaysOfSwiftUI and open-source work.</p>
+
+            <div class="space-x-4">
+                <a href="projects.html" class="bg-indigo-600 text-white px-6 py-3 rounded-md hover:bg-indigo-700 transition duration-300">View Projects</a>
+                <a href="contact.html" class="bg-gray-300 text-gray-800 px-6 py-3 rounded-md hover:bg-gray-400 transition duration-300">Get In Touch</a>
+            </div>
+        </section>
+
+        <section class="py-16 grid md:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                <h3 class="text-xl font-semibold mb-3">My App: Protocol</h3>
+                <p class="text-gray-600 mb-4">Check out my latest published app on the App Store.</p>
+                <a href="projects.html#protocol" class="text-indigo-600 hover:underline">Learn More →</a>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                <h3 class="text-xl font-semibold mb-3">Open Source Code</h3>
+                <p class="text-gray-600 mb-4">Explore my projects and contributions on GitHub.</p>
+                <a href="https://github.com/[YourGitHubUsername]" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:underline">View GitHub →</a>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                <h3 class="text-xl font-semibold mb-3">#100DaysOfSwiftUI</h3>
+                <p class="text-gray-600 mb-4">Follow my learning journey and insights on Telegram.</p>
+                <a href="[Your Telegram Channel Link]" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:underline">Join Channel →</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-800 text-gray-300 py-6 mt-12">
+      <div class="container mx-auto px-6 text-center">
+          <p>&copy; <span id="current-year"></span> Noib. All rights reserved.</p>
+          <div class="mt-2">
+              <a href="https://linkedin.com/in/kamolMadaminov" target="_blank" rel="noopener noreferrer" class="hover:text-white mx-2">LinkedIn</a> |
+              <a href="https://github.com/kamolMadaminov" target="_blank" rel="noopener noreferrer" class="hover:text-white mx-2">GitHub</a> |
+              <a href="https://t.me/noibkh" target="_blank" rel="noopener noreferrer" class="hover:text-white mx-2">Telegram</a>
+          </div>
+      </div>
   </footer>
-</body>
+
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Basic Active Nav Link Highlighting
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+            const navLinks = document.querySelectorAll('header nav ul li a');
+            navLinks.forEach(link => {
+                if (link.getAttribute('href') === currentPath) {
+                    link.classList.add('nav-active');
+                } else {
+                    link.classList.remove('nav-active'); // Ensure others are not active
+                }
+            });
+        });
+    </script>
+    </body>
 </html>

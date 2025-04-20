@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact">
+    <title>Contact</title>
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <style>
+        /* Basic Smooth Scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Example: Style for active nav link (adjust colors) */
+        .nav-active {
+            font-weight: bold;
+            /* Add other styling like underline or color */
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans antialiased">
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold text-indigo-600 hover:text-indigo-800">Noib</a>
+            <ul class="flex space-x-4 md:space-x-6">
+                <li><a href="index.html" class="text-gray-600 hover:text-indigo-600 nav-active">Home</a></li>
+                <li><a href="about.html" class="text-gray-600 hover:text-indigo-600">About</a></li>
+                <li><a href="projects.html" class="text-gray-600 hover:text-indigo-600">Projects</a></li>
+                <li><a href="support.html" class="text-gray-600 hover:text-indigo-600">Support</a></li>
+                <li><a href="contact.html" class="text-gray-600 hover:text-indigo-600">Contact</a></li>
+            </ul>
+            </nav>
+        </header>
+
+        <main class="container mx-auto px-6 py-12">
+          <section class="max-w-xl mx-auto text-center">
+              <h1 class="text-3xl font-bold mb-6">Get In Touch</h1>
+              <p class="text-lg text-gray-600 mb-10">
+                  I'm always open to connecting with fellow developers, potential clients, or anyone interested in my work. Here are the best ways to reach me:
+              </p>
+          </section>
+ 
+         <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-4xl mx-auto">
+              <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                 <h3 class="text-xl font-semibold mb-3">Telegram (Direct)</h3>
+                 <p class="text-gray-600 mb-4">For quick questions or direct contact.</p>
+                 <a href="https://t.me/noibkh" target="_blank" rel="noopener noreferrer" class="bg-blue-500 text-white px-6 py-2 rounded-md hover:bg-blue-600 transition duration-300">
+                     Message Me
+                 </a>
+             </div>
+ 
+             <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                 <h3 class="text-xl font-semibold mb-3">Telegram Channel</h3>
+                 <p class="text-gray-600 mb-4">Follow my #100DaysOfSwiftUI and dev blog updates.</p>
+                 <a href="https://t.me/swiftui100"" target="_blank" rel="noopener noreferrer" class="bg-blue-500 text-white px-6 py-2 rounded-md hover:bg-blue-600 transition duration-300">
+                     Join Channel
+                 </a>
+             </div>
+ 
+             <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                 <h3 class="text-xl font-semibold mb-3">LinkedIn</h3>
+                 <p class="text-gray-600 mb-4">Connect professionally and view my profile.</p>
+                 <a href="https://linkedin.com/in/kamolMadaminov" target="_blank" rel="noopener noreferrer" class="bg-sky-700 text-white px-6 py-2 rounded-md hover:bg-sky-800 transition duration-300">
+                     View LinkedIn
+                 </a>
+             </div>
+ 
+             <div class="bg-white p-6 rounded-lg shadow-md text-center lg:col-span-1 md:col-span-2 col-span-1">
+                 <h3 class="text-xl font-semibold mb-3">GitHub</h3>
+                 <p class="text-gray-600 mb-4">Explore my code and open-source projects.</p>
+                 <a href="https://github.com/kamolMadaminov" target="_blank" rel="noopener noreferrer" class="bg-gray-800 text-white px-6 py-2 rounded-md hover:bg-gray-900 transition duration-300">
+                     View GitHub
+                 </a>
+             </div>
+         </section>
+ 
+          </main>
+
+          <footer class="bg-gray-800 text-gray-300 py-6 mt-12">
+            <div class="container mx-auto px-6 text-center">
+                <p>&copy; <span id="current-year"></span> Noib. All rights reserved.</p>
+                <div class="mt-2">
+                    <a href="https://linkedin.com/in/kamolMadaminov" target="_blank" rel="noopener noreferrer" class="hover:text-white mx-2">LinkedIn</a> |
+                    <a href="https://github.com/kamolMadaminov" target="_blank" rel="noopener noreferrer" class="hover:text-white mx-2">GitHub</a> |
+                    <a href="https://t.me/noibkh" target="_blank" rel="noopener noreferrer" class="hover:text-white mx-2">Telegram</a>
+                </div>
+            </div>
+        </footer>
+
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Basic Active Nav Link Highlighting
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+            const navLinks = document.querySelectorAll('header nav ul li a');
+            navLinks.forEach(link => {
+                if (link.getAttribute('href') === currentPath) {
+                    link.classList.add('nav-active');
+                } else {
+                    link.classList.remove('nav-active'); // Ensure others are not active
+                }
+            });
+        });
+    </script>
+    </body>
+</html>

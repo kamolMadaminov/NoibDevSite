@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projects">
+    <title>Projects</title>
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <style>
+        /* Basic Smooth Scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Example: Style for active nav link (adjust colors) */
+        .nav-active {
+            font-weight: bold;
+            /* Add other styling like underline or color */
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans antialiased">
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold text-indigo-600 hover:text-indigo-800">Noib</a>
+            <ul class="flex space-x-4 md:space-x-6">
+                <li><a href="index.html" class="text-gray-600 hover:text-indigo-600 nav-active">Home</a></li>
+                <li><a href="about.html" class="text-gray-600 hover:text-indigo-600">About</a></li>
+                <li><a href="projects.html" class="text-gray-600 hover:text-indigo-600">Projects</a></li>
+                <li><a href="support.html" class="text-gray-600 hover:text-indigo-600">Support</a></li>
+                <li><a href="contact.html" class="text-gray-600 hover:text-indigo-600">Contact</a></li>
+            </ul>
+            </nav>
+        </header>
+
+          <main class="container mx-auto px-6 py-12">
+              <h1 class="text-3xl font-bold mb-8 text-center">Projects</h1>
+      
+              <section id="protocol" class="bg-white p-8 rounded-lg shadow-md mb-12 flex flex-col md:flex-row items-center gap-8">
+                <div class="md:w-1/4 text-center">
+                  <img src="assets/img/protocol-icon.png" alt="Protocol App Icon" class="w-32 h-32 mx-auto mb-4 rounded-lg shadow-sm">
+                  <a href="https://apps.apple.com/app/protocol-daily-ops/id6744578703" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/img/appstore-badge.svg" alt="Download on the App Store" class="h-12 mx-auto">
+                  </a>
+                </div>
+                <div class="md:w-3/4">
+                  <h2 class="text-2xl font-semibold mb-3">Protocol – Build Habits with Intention</h2>
+                  <p class="text-gray-700 leading-relaxed mb-4">
+                    Protocol is a minimalist iOS app designed to help you build habits, track your mood, and reflect daily. It combines a habit tracker, mood log, and reflection journal into one simple interface, empowering you to move forward with clarity and consistency.
+                  </p>
+                  <p class="text-gray-700 leading-relaxed mb-4">
+                    Built entirely with SwiftUI, Protocol offers a clean, distraction-free experience without ads or clutter. It's your personal system for self-improvement, designed to support your growth—one day at a time.
+                  </p>
+                  <p class="text-gray-700 leading-relaxed mb-4">
+                    <a href="https://github.com/kamolMadaminov/Protocol" target="_blank" class="text-indigo-600 hover:underline font-medium">View the source code on GitHub →</a>
+                  </p>
+                  <p class="text-gray-700 leading-relaxed">
+                    Available now on the App Store.
+                  </p>
+                </div>
+              </section>
+                         
+      
+              <section id="github" class="bg-white p-8 rounded-lg shadow-md">
+                  <h2 class="text-2xl font-semibold mb-6 text-center">GitHub & Open Source</h2>
+                  <p class="text-gray-700 leading-relaxed mb-6 text-center max-w-2xl mx-auto">
+                      I believe in the power of open source. You can find more of my work, experiments, and contributions on my GitHub profile. Below are a few highlights.
+                  </p>
+                  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                      <div class="border border-gray-200 p-4 rounded-md hover:shadow-lg transition duration-300">
+                          <h3 class="text-lg font-semibold mb-2">Upcoming</h3>
+                          <p class="text-gray-600 text-sm mb-3">Coming soon</p>
+                          <a href="[Link to GitHub Repo 1]" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:underline text-sm">View on GitHub →</a>
+                      </div>
+                       <div class="border border-gray-200 p-4 rounded-md hover:shadow-lg transition duration-300">
+                          <h3 class="text-lg font-semibold mb-2">Upcoming</h3>
+                          <p class="text-gray-600 text-sm mb-3">Coming soon</p>
+                          <a href="[Link to GitHub Repo 2]" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:underline text-sm">View on GitHub →</a>
+                      </div>
+                      </div>
+                  <div class="text-center mt-8">
+                      <a href="https://github.com/kamolMadaminov/" target="_blank" rel="noopener noreferrer" class="bg-gray-800 text-white px-6 py-3 rounded-md hover:bg-gray-900 transition duration-300">
+                          Explore All on GitHub
+                      </a>
+                  </div>
+              </section>
+      
+          </main>
+    <footer class="bg-gray-800 text-gray-300 py-6 mt-12">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; <span id="current-year"></span> Noib. All rights reserved.</p>
+            <div class="mt-2">
+                <a href="https://linkedin.com/in/kamolMadaminov" target="_blank" rel="noopener noreferrer" class="hover:text-white mx-2">LinkedIn</a> |
+                <a href="https://github.com/kamolMadaminov" target="_blank" rel="noopener noreferrer" class="hover:text-white mx-2">GitHub</a> |
+                <a href="https://t.me/noibkh" target="_blank" rel="noopener noreferrer" class="hover:text-white mx-2">Telegram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Basic Active Nav Link Highlighting
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+            const navLinks = document.querySelectorAll('header nav ul li a');
+            navLinks.forEach(link => {
+                if (link.getAttribute('href') === currentPath) {
+                    link.classList.add('nav-active');
+                } else {
+                    link.classList.remove('nav-active'); // Ensure others are not active
+                }
+            });
+        });
+    </script>
+    </body>
+</html>
